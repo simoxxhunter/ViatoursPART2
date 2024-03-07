@@ -162,6 +162,34 @@ h3{
   }
 
 
+
+
+  footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #FDF0EA;
+    margin-top: 5%;
+}
+
+
+
+
+.info {
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 50px;
+}
+
+.iconContact{
+    margin-top: 8%;
+    margin-left: 58%;
+    width:  10%;
+    height: 22%;
+}
+
+
   @media (max-width: 768px) {
     .carte {
         width: calc(50% - 20px);
