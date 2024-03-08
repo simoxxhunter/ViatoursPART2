@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
+
+
+
+body {
+    font-family: "Rubik", sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #FDF0EA, #ffffff); /* Gradient background for the entire page */
+  }
+
 * {
     font-family: "Rubik", sans-serif; 
     margin: 0;
@@ -29,7 +40,7 @@
 
 .nav a {
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 100%;
     text-decoration: none;
     cursor: pointer;
 
@@ -67,20 +78,31 @@
 /* --------------------   main   ------------------------*/
 
 
+.title{
+margin-top: 5%;
+margin-bottom: -10%;
+text-align: center;
+font-size: 150%;
+background-image: linear-gradient(to right, #ff7f5f, #b50864); /* Gradient background color */
+background-clip: text;/* Clip text to the background */
+color: transparent;
+
+}
+
 
 
 .carte {
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden;
-    width: 25%; 
-    margin: 4%; 
+    width: calc(33% - 4%); /* Adjusted width for three cards in a row */
+    margin: 2%; /* Adjusted margin between the cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 6%;
     transition: transform 0.6s ease;
-    clear: both;
-    flex-wrap: wrap;
-}
+    margin-top: 20%;
+    margin-bottom: -10%;
+    
+ 
+  }
 
 .carte:hover {
     transform: scale(1.05); 
@@ -125,6 +147,7 @@
     line-height: 1.5;
     font-size: medium;
     padding-bottom: 5%;
+    width: 90% ;
 }
 
 h3{
@@ -144,11 +167,19 @@ h3{
 
   
 
+.cartesContainer {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+  }
+
 .cartesOne {
 
   display: flex;
   flex-wrap: nowrap;
-  flex-wrap: wrap;
+  justify-content: center; 
+
+
 
 }
 
@@ -157,7 +188,8 @@ h3{
 
     display: flex;
     flex-wrap: nowrap;
-    flex-wrap: wrap;
+    justify-content: center; 
+    margin-bottom: 15%;
   
   }
 
@@ -165,33 +197,69 @@ h3{
 
 
   footer {
-    display: flex;
-    width: 100%;
-    height: 200px;
     background-color: #FDF0EA;
-    margin-top: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-
 
 .info {
-    padding-left: 50px;
     font-size: 16px;
     line-height: 2;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.iconContact{
-    margin-top: 8%;
-    margin-left: 58%;
-    width:  10%;
-    height: 22%;
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
+.facebook,
+.instagram,
+.twitter {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    
 
-  @media (max-width: 768px) {
-    .carte {
-        width: calc(50% - 20px);
+    transition: transform 0.6s ease;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (min-width: 769px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+       
+    }
+    
+    .info,
+    .icons {
+        margin-top: 0;
+
+
+    }
+    
+    .info {
+        margin-right: 20px;
+        margin-left: -50%;
+        
     }
 }
+
+@media only screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+
