@@ -68,32 +68,30 @@ body {
         display: flex; 
         flex-direction: column;
         position: absolute;
-        top: 60px; 
-        right: 0;
+        top: 50px; 
         background-color: #FDF0EA;
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
-        align-items: center;
+        margin-left: 3%;
+        
     }
 
     .mobile-nav a {
         margin-bottom: 10px;
-        text-align: center; 
+        
+        justify-content: left;
     }
 
     .button {
-        margin-top: -2%;
-        width: auto; 
-        height: auto; 
-        background-color: transparent; 
-        color: #EB662B; 
+       display: none; 
     }
 }
 
 .mobile-nav {
     display: none; 
 }
+
 
 
 
