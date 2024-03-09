@@ -46,6 +46,58 @@ body {
 
 }
 
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none; /* Hide navigation links on small screens */
+    }
+
+    .burger-menu {
+        display: block; /* Show burger menu on small screens */
+        cursor: pointer;
+        margin-left: auto; /* Align burger menu to the right */
+        margin-right: 20px; /* Add margin for spacing */
+        color: #EB662B;
+        font-size: 24px; /* Adjust font size as needed */
+    }
+
+    .mobile-nav {
+        display: flex; /* Show mobile navigation on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Height of the header */
+        right: 0;
+        background-color: #FDF0EA;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .mobile-nav a {
+        margin-bottom: 10px;
+        text-align: center; 
+    }
+
+    .button {
+        margin-top: -2%;
+        width: auto; 
+        height: auto; 
+        background-color: transparent; 
+        color: #EB662B; 
+    }
+}
+
+/* Hide burger menu on screens wider than 768px */
+@media only screen and (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
 
 .nav a:hover{
 
@@ -72,7 +124,6 @@ body {
 .button:hover {
     transform: scale(1.05); 
 }
-
 
 
 /* --------------------   main   ------------------------*/
@@ -232,6 +283,21 @@ h3{
 .twitter:hover {
     transform: scale(1.05);
 }
+
+
+
+
+
+/*----------------------------- mobile ------------------------*/
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 769px) {
     footer {
