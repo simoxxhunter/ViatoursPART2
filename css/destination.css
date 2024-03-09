@@ -294,8 +294,7 @@ body {
 
 /*------------------------- footer ---------------------------*/
 
-
-  footer {
+footer {
     background-color: #FDF0EA;
     padding: 20px;
     display: flex;
@@ -312,7 +311,7 @@ body {
 .icons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+
 }
 
 .facebook,
@@ -320,8 +319,6 @@ body {
 .twitter {
     width: 30px;
     height: 30px;
-    margin: 0 10px;
-    
 
     transition: transform 0.6s ease;
 }
@@ -332,7 +329,32 @@ body {
     transform: scale(1.05);
 }
 
+@media only screen and (min-width: 769px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+       
+    }
+    
+    .info,
+    .icons {
+        margin-top: 0;
 
 
+    }
+    
+    .info {
+        margin-right: 20px;
+        margin-left: -50%;
+        
+    }
+}
 
-
+@media only screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+}
