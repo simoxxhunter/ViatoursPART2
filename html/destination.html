@@ -26,6 +26,17 @@
       </ul>
     </nav>
 
+
+    <div class="burger-menu">&#9776;</div>
+    <!-- Mobile navigation links -->
+    <div class="mobile-nav">
+      <a>Destinations</a>
+      <a>Activities</a>
+      <a>Contact</a>
+      <a>Sign up</a>
+      <button class="button">Login</button>
+    </div>
+
 </header>
 
 
@@ -138,6 +149,18 @@
 </div>
 </footer>
 
+
+<script>
+  // JavaScript code for burger menu functionality
+  document.querySelector('.burger-menu').addEventListener('click', function() {
+    var mobileNav = document.querySelector('.mobile-nav');
+    if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+      mobileNav.style.display = 'flex'; // Show the mobile navigation
+    } else {
+      mobileNav.style.display = 'none'; // Hide the mobile navigation
+    }
+  });
+</script>
 
 
 </body>
