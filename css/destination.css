@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, #FDF0EA, #ffffff); /* Gradient background for the entire page */
+    background: linear-gradient(to bottom, #FDF0EA, #ffffff); 
   }
 
 * {
@@ -52,23 +52,23 @@ body {
 
 @media only screen and (max-width: 768px) {
     .nav {
-        display: none; /* Hide navigation links on small screens */
+        display: none; 
     }
 
     .burger-menu {
-        display: block; /* Show burger menu on small screens */
+        display: block; 
         cursor: pointer;
-        margin-left: auto; /* Align burger menu to the right */
-        margin-right: 20px; /* Add margin for spacing */
+        margin-left: auto; 
+        margin-right: 20px; 
         color: #EB662B;
-        font-size: 24px; /* Adjust font size as needed */
+        font-size: 24px; 
     }
 
     .mobile-nav {
-        display: flex; /* Show mobile navigation on small screens */
+        display: flex; 
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Height of the header */
+        top: 60px; 
         right: 0;
         background-color: #FDF0EA;
         width: 100%;
@@ -91,7 +91,13 @@ body {
     }
 }
 
-/* Hide burger menu on screens wider than 768px */
+.mobile-nav {
+    display: none; 
+}
+
+
+
+
 @media only screen and (min-width: 769px) {
     .burger-menu {
         display: none;
@@ -130,121 +136,163 @@ body {
 
 
 .title{
-margin-top: 5%;
-margin-bottom: -10%;
-text-align: center;
-font-size: 150%;
-background-image: linear-gradient(to right, #ff7f5f, #b50864); /* Gradient background color */
-background-clip: text;/* Clip text to the background */
-color: transparent;
-
-}
-
-
-
-.carte {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: calc(33% - 4%); /* Adjusted width for three cards in a row */
-    margin: 2%; /* Adjusted margin between the cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.6s ease;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-bottom: -10%;
+    text-align: center;
+    font-size: 150%;
+    background-image: linear-gradient(to right, #ff7f5f, #b50864); 
+    background-clip: text;
+    color: transparent;
     
- 
-  }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .title {
+    
+            width: 100%;
+            font-size: 95%;
+            margin-bottom: 5%;
+            
+        }
+    }
+    
+    
+    
+    .carte {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: calc(33% - 4%); 
+        margin: 2%; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        transition: transform 0.6s ease;
+        margin-top: 20%;
+        margin-bottom: -10%;
+       
+     
+      }
+    
+      @media only screen and (max-width: 768px) {
+         .carte {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 8%;
+        }
+    }
+    
+    
+    .carte:hover {
+        transform: scale(1.05); 
+    }
+    
+    .carteImage img {
+        width: 100%;
+        height: auto;
+        margin-bottom: -20px; 
+    }
+    
+    .carteImage {
+        position: relative;
+        top: -40px;
+    }
+    
+    .carteContent {
+        padding: 3%;
+    }
+    
+    
+    .carteContent h4 {
+        margin-bottom: 5%;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #F9B48D; 
+        padding: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        padding: 10px -20px;
+        width: 40%;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    
+    .carteContent p {
+        font-size: 14px;
+        color: #000000;
+        line-height: 1.5;
+        font-size: medium;
+        padding-bottom: 5%;
+        width: 90% ;
+    }
+    
+    h3{
+        margin-bottom: -15;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #F9B48D; 
+        padding: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        padding: 10px -20px;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+      
+    
+    .cartesContainer {
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+      }
+    
+    .cartesOne {
+    
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center; 
+    
+    
+    
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .cartesOne {
+            flex-direction: column;
+            justify-content: center;
+       
+    
+        }
+    }
+    
+    
+    .cartesTwo {
+    
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center; 
+        margin-bottom: 15%;
+      
+      }
+    
+    
+      @media only screen and (max-width: 768px) {
+        .cartesTwo {
+            flex-direction: column;
+            justify-content: center;
+       
+    
+        }
+    }
 
-.carte:hover {
-    transform: scale(1.05); 
-}
-
-.carteImage img {
-    width: 100%;
-    height: auto;
-    margin-bottom: -20px; 
-}
-
-.carteImage {
-    position: relative;
-    top: -40px;
-}
-
-.carteContent {
-    padding: 3%;
-}
-
-/* Styles for the heading */
-.carteContent h4 {
-    margin-bottom: 5%;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #F9B48D; /* Background color for h4 */
-    padding: 10px; /* Add padding for spacing */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for h4 */
-    padding: 10px -20px;
-    width: 40%;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-/* Styles for the paragraph */
-.carteContent p {
-    font-size: 14px;
-    color: #000000;
-    line-height: 1.5;
-    font-size: medium;
-    padding-bottom: 5%;
-    width: 90% ;
-}
-
-h3{
-    margin-bottom: -15;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #F9B48D; /* Background color for h4 */
-    padding: 10px; /* Add padding for spacing */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for h4 */
-    padding: 10px -20px;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-  
-
-.cartesContainer {
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-  }
-
-.cartesOne {
-
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center; 
 
 
-
-}
-
-
-.cartesTwo {
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; 
-    margin-bottom: 15%;
-  
-  }
-
-
+/*------------------------- footer ---------------------------*/
 
 
   footer {
@@ -286,46 +334,5 @@ h3{
 
 
 
-
-
-/*----------------------------- mobile ------------------------*/
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 769px) {
-    footer {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-
-       
-    }
-    
-    .info,
-    .icons {
-        margin-top: 0;
-
-
-    }
-    
-    .info {
-        margin-right: 20px;
-        margin-left: -50%;
-        
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    footer {
-        flex-direction: column;
-    }
-}
 
 

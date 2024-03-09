@@ -154,7 +154,11 @@
   // JavaScript code for burger menu functionality
   document.querySelector('.burger-menu').addEventListener('click', function() {
     var mobileNav = document.querySelector('.mobile-nav');
-    mobileNav.style.display = (mobileNav.style.display === 'none' || mobileNav.style.display === '') ? 'flex' : 'none';
+    if (mobileNav.style.display === 'none' || mobileNav.style.display === '') {
+      mobileNav.style.display = 'flex'; // Show the mobile navigation
+    } else {
+      mobileNav.style.display = 'none'; // Hide the mobile navigation
+    }
   });
 </script>
 
