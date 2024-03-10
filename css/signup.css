@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -167,7 +167,7 @@ hr {
 
 /* Style de la section droite */
 .right {
-  width: 55%;
+  width: 65%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -229,9 +229,8 @@ hr {
 
   /* Modifier le style du formulaire pour les appareils mobiles */
   .form {
-    width: 90%;
+ 
     max-width: 400px;
-    margin-top: 1rem;
     padding: 1rem;
     background-color: white;
     border: 1px solid #ccc;
@@ -240,5 +239,13 @@ hr {
 
   .right {
   display: none;
+  }
+  .or{
+     margin-top: 10px;
+     margin-bottom: 10px;
+  }
+  .social{
+   margin-top: 10px;
+   margin-bottom: 24px;
   }
 }
