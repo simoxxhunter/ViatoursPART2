@@ -112,22 +112,23 @@
 
 
 .activities-Cards {
- 
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
     margin-left: 7%;
     margin-right: 7%;
+
 }
 
 .cards-container {
-    flex:  17rem;
-    margin-bottom: 20px;
-   
+    flex: 20rem;
+    margin-bottom: 40px;
+
 }
 
-.card {
+.main-section .card {
 
     position: relative;
     border-radius: 40px;
@@ -136,12 +137,17 @@
 
 }
 
-.card img {
+.main-section .card img {
     width: 100%;
     height: 100%;
     border-radius: 40px;
     object-fit: cover;
 }
+
+
+
+/*        CARD TITLE / ACTIVITIES AND / LOCATIONS NUMBER /BUTTON  */
+
 
 .card-title {
     position: absolute;
@@ -156,7 +162,6 @@
     background-color: rgba(0, 0, 0, 0.5);
 
 }
-
 
 .No-activities {
     position: absolute;
@@ -186,15 +191,16 @@
 
 }
 
-.No-act-loc button{
+.No-act-loc button {
     position: absolute;
     background-color: aliceblue;
     color: black;
-    top: 330px;
-    left: 40px;
+    top: 350px;
+    left: 20px;
     width: calc(30px + 7.4vw);
-    font-size: calc(10px + 0.4vw);    
+    font-size: calc(10px + 0.4vw);
 }
+
 .No-act-loc button:hover {
     background-color: #eb662bfc;
 }
@@ -206,12 +212,13 @@
 
 
 
+/*         KEEP THINGS FLEXIBLE DOC BREAK  */
 
 
 .doc-break-1 {
     align-items: center;
     position: relative;
-
+    height: max-content;
 
 }
 
@@ -219,9 +226,10 @@
 .doc-break-1-image {
     position: static;
     width: 100%;
-    height: 25vw;
+    height: calc(200px + 0.9vw);
 }
-.doc-break-1-headline{
+
+.doc-break-1-headline {
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -234,9 +242,10 @@
     font-weight: 900;
     font-size: 4vw;
     color: rgba(0, 0, 0, 0.788);
-    
+
 }
-.doc-break-1-text{
+
+.doc-break-1-text {
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -245,10 +254,165 @@
     right: 20%;
     font-weight: bolder;
     text-align: center;
-    z-index: 1;
     font-weight: 200;
     overflow: hidden;
+}
+
+
+
+
+
+/* 2nd section ACTIVITIES CARDS*/
+
+/* activities cards*/
+
+.activities-section .activities-Cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+.activities-section .cards-container {
+ 
+    flex: 15rem;
+    margin-bottom: 40px;
+
+}
+
+.activities-section .card {
+    position: relative;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.507);
+    height: 25em;
+    width: 110%;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+
+.activities-section .card img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    object-fit: cover;
+}
+
+
+
+/*        CARD TITLE / ACTIVITIES AND / LOCATIONS NUMBER /BUTTON  */
+
+
+.Sell-Out {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 224px;
+    padding: 2px;
+    margin: 0;
+    color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    font-size: bold;
     
+
+}
+
+.activity-title {
+    position: absolute;
+    top: 58%;
+    left: 5px;
+    right: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: calc(10px + 0.4vw);
+    font-weight: 600;
+    font-family: sans-serif;
+
+}
+
+.activity-title:hover {
+    cursor: pointer;
+    color: #eb662bfc;
+}
+
+
+.No-locations {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    right: 100px;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: calc(10px + 0.4vw);
+
+}
+
+
+.activity-location {
+    position: absolute;
+    background-color: #d8d8d8a9;
+    padding-left: 15px;
+    left: -7px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.507);
+    text-shadow: 0px 5px 10px rgb(0, 0, 0)
+}
+
+.line-break {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    height: 10px;
+    
+}
+
+
+hr {
+    margin-left: 15%;
+    width: 70%;
+    color: #fc5108;
+}
+
+.stars-img-div {
+    width: 100px;
+    object-fit: fill;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.duration-price {
+    height: 28px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    background-color: #d8d8d8cc;
+    top: 93.1%;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0px 7px 12px rgb(0, 0, 0);
+
+}
+
+.duration {
+    margin-left: 5px;
+}
+
+.price {
+    margin-right: 5px;
+    font-size: calc(8px + 0.4vw);
 }
 
 
