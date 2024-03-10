@@ -285,13 +285,13 @@
 }
 
 .activities-section .card {
-
     position: relative;
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.507);
     height: 25em;
     width: 110%;
-    background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
 }
 
@@ -302,6 +302,8 @@
     border-top-right-radius: 40px;
     object-fit: cover;
 }
+
+
 
 /*        CARD TITLE / ACTIVITIES AND / LOCATIONS NUMBER /BUTTON  */
 
@@ -323,9 +325,9 @@
 
 .activity-title {
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 5px;
-    right: 5pxpx;
+    right: 5px;
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: calc(15px + 0.4vw);
@@ -354,6 +356,63 @@
 
 }
 
+
+.activity-location {
+    position: absolute;
+    background-color: #d8d8d8a9;
+    padding-left: 15px;
+    left: -7px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.507);
+    text-shadow: 0px 5px 10px rgb(0, 0, 0)
+}
+
+.line-break {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    background-color: aqua;
+    height: 10px;
+    
+}
+
+
+hr {
+    margin-left: 15%;
+    width: 70%;
+    color: #EB662B;
+}
+
+.stars-img-div {
+    width: 150px;
+    object-fit: fill;
+    position: absolute;
+    top: 80%;
+}
+
+.duration-price {
+    height: 28px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    background-color: #d8d8d8cc;
+    top: 93.1%;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0px 7px 12px rgb(0, 0, 0);
+
+}
+
+.duration {
+    margin-left: 5px;
+}
+
+.price {
+    margin-right: 5px;
+    font-size: calc(8px + 0.4vw);
+}
 
 
 /* Footer ---------------------------------------------------------*/
