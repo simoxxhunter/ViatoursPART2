@@ -173,7 +173,7 @@ a{
   
   /* Style de la section droite */
   .right {
-    width: 55%;
+    width: 65%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -220,7 +220,6 @@ a{
     /* Modifier le style du conteneur principal pour les appareils mobiles */
     .main {
       display: flex;
-      flex-direction: column;
       align-items: center;
       margin: 2rem;
       background-color: #f0f0f0;
@@ -235,17 +234,24 @@ a{
   
     /* Modifier le style du formulaire pour les appareils mobiles */
     .form {
-      width: 90%;
       max-width: 400px;
-      margin-top: 1rem;
       padding: 1rem;
       background-color: white;
       border: 1px solid #ccc;
       border-radius: 10px;
     }
+    .
   
   .right {
     display: none;
   }
+  .or{
+     margin-top: 10px;
+     margin-bottom: 10px;
+  }
+  .social{
+   margin-top: 10px;
+   margin-bottom: 24px;
+  }
+         
 }
-  
