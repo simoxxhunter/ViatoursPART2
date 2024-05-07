@@ -1,4 +1,11 @@
 # ViatoursPART2
+
+
+J'étais responsable de la création de la page d'activités et de sa responsabilisation, j'ai réalisé le design figma et j'utilise vscode pour le développement.
+
+
+
+
 Project context
 L'agence de voyage ViaTours a exprimé son appréciation pour la page d'accueil que vous avez développée. En conséquence, le chef de projet a confié à votre équipe le projet de développement de leur site web, dans le but d'intégrer les pages nécessaires et d'apporter des améliorations visant à offrir une meilleure expérience utilisateur.
 
