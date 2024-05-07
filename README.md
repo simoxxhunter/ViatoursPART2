@@ -3,6 +3,9 @@ Project context
 L'agence de voyage ViaTours a exprimé son appréciation pour la page d'accueil que vous avez développée. En conséquence, le chef de projet a confié à votre équipe le projet de développement de leur site web, dans le but d'intégrer les pages nécessaires et d'apporter des améliorations visant à offrir une meilleure expérience utilisateur.
 
 ​
+![Viatours high fed](https://github.com/simoxxhunter/ViatoursPART2/assets/94250469/457338b8-14eb-4bac-9b4d-6ac5a1fc216b)
+![viatours low fed (1)](https://github.com/simoxxhunter/ViatoursPART2/assets/94250469/17bb20df-6d98-494e-bc3f-4b1798557c03)
+![Viatours Phone](https://github.com/simoxxhunter/ViatoursPART2/assets/94250469/b460185a-e9ce-4f8a-a67c-a118adae4ee0)
 
 Page à intégrer:
 
